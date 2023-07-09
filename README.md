@@ -1,10 +1,10 @@
 # Accessibility Assist
 
-Accessibility Assist is a multi-module approach to handling Accessibility realted issues in ride booking services.
+Accessibility Assist is a multi-module approach to handling Accessibility related issues in ride booking services.
 
 
 
-Transportation is one of the most significant barriers between people with disabilities and their full participation in the community. We aim to solve this issue using appropriate technological advnaces made in recent times such as Large Language Models, Speech Recognition and Synthesis and Logistic Regression Model.
+Transportation is one of the most significant barriers between people with disabilities and their full participation in the community. We aim to solve this issue using appropriate technological advances made in recent times such as Large Language Models, Speech Recognition and Synthesis and Logistic Regression Model.
 
 ## Available Scripts
 
