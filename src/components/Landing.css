@@ -1,0 +1,293 @@
+.Root{
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.Background01Main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  
+  background-image: url("./images/LandingBG01.jpg");
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  scroll-snap-type: both mandatory;
+  position: relative;
+}
+
+.Background02 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/LandingBG02.jpg");
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+  }
+
+  .Background03Pain {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/PainPoints.jpg");
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+  }
+
+  .Background04 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/PpBG01_Text.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  
+  .Background05 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/PpBG02_Text.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  
+  .Background06 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/PpBG03_Text.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  
+  .Background07 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/TechstackBG.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+  }
+
+  .Taxi{
+    height: 30vh;
+    aspect-ratio: 1;
+    background-image: url("./images/taxi.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(0, 255, 123);
+    box-shadow: 0px 0px 15px 10px black;
+    border-radius: 0.5cm;
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+  }
+
+  .Book{
+    height: 30vh;
+    aspect-ratio: 1;
+    background-image: url("./images/book.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(168, 47, 255);
+    box-shadow: 0px 0px 15px 10px black;
+    border-radius: 0.5cm;
+    position: absolute;
+    right: 5vw;
+    top: 30vh;
+  }
+
+  .Rating{
+    height: 30vh;
+    aspect-ratio: 1;
+    background-image: url("./images/rating.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(197, 197, 197);
+    box-shadow: 0px 0px 15px 10px black;
+    border-radius: 0.5cm;
+    position: absolute;
+    right: 5vw;
+    top: 30vh;
+  }
+
+  .Float{
+    animation-name: float;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 50%;
+  width: 100%;
+  background-color: #000000bb;
+  box-shadow: 0px 0px 10px 0px #000000dd;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainContainerDark {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 60%;
+    width: 100%;
+    background-color: #000000ee;
+    box-shadow: 0px 0px 10px 0px #000000dd;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.Title {
+  display: flex;
+  height: 39%;
+  aspect-ratio: 4.92;
+  background-image: url("./images/Title.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.About {
+    display: flex;
+    height: 15%;
+    aspect-ratio: 4.92;
+    background-image: url("./images/About.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .PainPoints {
+    display: flex;
+    height: 15%;
+    aspect-ratio: 4.92;
+    background-image: url("./images/PainPoints.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15%;
+  gap: 5%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.Button {
+  display: flex;
+  height: 90%;
+  aspect-ratio: 3.9;
+  background-color: #000000aa;
+  border: 2px solid #393939;
+  border-radius: 300px;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  user-select: none;
+  transition-duration: 0.1s;
+  margin: 3px;
+}
+
+.Button:hover {
+  background-color: #252525;
+}
+
+.Button:active {
+  background-color: #393939;
+  scale: 0.95;
+}
+
+h2 {
+  color: white;
+}
+
+.ArrowImg {
+  animation-name: arrowAnim;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  margin: 0;
+  height: 7vh
+}
+
+@keyframes arrowAnim {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(1vh);
+  }
+}
+
+@keyframes float {
+    0% { transform: translateY(0vh); }
+    50% { transform: translateY(1vh); }
+    100% { transform: translateY(0vh); }
+}

@@ -1,0 +1,364 @@
+.Root{
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    overflow: scroll;
+    height: 100vh;
+}
+
+
+.Modules {
+    display: flex;
+    height: 25%;
+    aspect-ratio: 4.92;
+    background-image: url("./images/Modules.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+.Background01 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/LandingBG03.jpg");
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  
+.Chatbot {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/AccessibotBG.jpg");
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  
+.Regression {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/LRMBG.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  .Phone
+  {
+    display: flex;
+    width: 20vw;
+    aspect-ratio: 0.45;
+    background-image: url("./images/Screen.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1cm;
+    border: 10px solid black;
+    position: absolute;
+    right: 5vw;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+
+  .Rate
+  {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    aspect-ratio: 0.45;
+    background-image: url("./images/Rate.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1cm;
+    border: 10px solid black;
+    position: absolute;
+    right: 5vw;
+    justify-content: end;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px black;
+    overflow: hidden;
+  }
+
+  
+.Feedback {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("./images/DedicatedFeedback.jpg");
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+  }
+
+  .RateBox
+  {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: fit-content;
+    width: 95%;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px gray;
+    border-radius: 0.5cm;
+    transition-duration: 0.25s;
+    transform: scaleX(0) translateY(500px);
+    font-size: 239%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-left: 10%;
+    box-sizing: border-box;
+    gap: 3px;
+  }
+
+  .RateBox > h2 {
+    color: black;
+    font-size: 50%;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+
+
+  .ShowRateBox
+  {
+    transform: scaleX(1) translateY(0px);  
+  }
+
+  
+.RateButton {
+    display: flex;
+    height: 7%;
+    width: 80%;
+    background-color: rgb(0, 179, 0);
+    color: white;
+    border: 2px solid #00de43;
+    border-radius: 300px;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    user-select: none;
+    transition-duration: 0.1s;
+    margin: 15px;
+  }
+  
+  .RateButton:hover {
+    background-color: rgb(0, 135, 0);
+  }
+  
+  .RateButton:active {
+    background-color: rgb(0, 83, 0);
+    scale: 0.95;
+  }
+
+  
+.SubmitButton {
+    display: flex;
+    height: fit-content;
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    background-color: rgb(0, 179, 0);
+    color: white;
+    border: 2px solid #00de43;
+    border-radius: 300px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50%;
+    user-select: none;
+    transition-duration: 0.1s;
+    margin: 15px;
+  }
+  
+  .SubmitButton:hover {
+    background-color: rgb(0, 135, 0);
+  }
+  
+  .SubmitButton:active {
+    background-color: rgb(0, 83, 0);
+    scale: 0.95;
+  }
+
+  .HighlightButton{
+    animation-name: HighlightB;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+  }
+
+  @keyframes HighlightB {
+    0% {  transform: rotate(0deg) translateY(0); box-shadow: 0px 0px 5px 0px rgb(0, 178, 83);  }
+    5% {  transform: rotate(1deg)  }
+    10% {  transform: rotate(-1deg) translateY(-10px)  }
+    15% {  transform: rotate(1deg)  }
+    20% {  transform: rotate(-1deg)  }
+    25% {  transform: rotate(0deg) translateY(0); box-shadow: 0px 0px 5px 5px rgb(178, 255, 201);  }
+    100% { box-shadow: 0px 0px 5px 0px rgb(0, 178, 83);}
+}
+
+.RatingDone {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/RateDone.png");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+    animation-name: RevealonlyOpacity;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+.Tick{
+    display: flex;
+    height: 25%;
+    aspect-ratio: 1;
+    background-image: url("./images/Tick.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    animation-name: Reveal;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 0.25s;
+}
+
+.RatingDone > H1 {
+    animation-name: Reveal;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+@keyframes Reveal {
+    0% {opacity: 0; transform: translateY(64px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+
+@keyframes RevealonlyOpacity {
+    0% {opacity: 0; transform: translateY(0px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+.RegressionBox{
+    display: flex;
+    height: 80vh;
+    aspect-ratio: 0.8;
+    background-image: linear-gradient(to bottom right , #04323d , #041f35 );
+    position: absolute;
+    right: 5vw;
+    border-radius: 0.5cm;
+    border: 3px solid #08385f;
+    box-shadow: 0px 0px 10px 0px #043b4b;
+    flex-direction: column;
+    align-items: start;
+    box-sizing: border-box;
+    padding: 1% 1% 1% 1%;
+}
+
+.RatingOptionsBox{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.RatingsOption{
+    display: flex;
+    height: fit-content;
+    width: 50%;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 5%;
+    box-sizing: border-box;
+    font-size: 1.5vh;
+}
+
+.DriverRating{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    height: 25%;
+    width: 24%;
+    align-self: center;
+    flex-direction: column;
+    font-size: 3vh;
+    margin-top: 1vh;
+    font-weight: bold;
+
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Excellent{
+    background-image: url("./images/Excelent.png");
+}
+
+.Good{
+    background-image: url("./images/Good.png");
+}
+
+.Average{
+    background-image: url("./images/Average.png");
+}
+
+.Bad{
+    background-image: url("./images/Bad.png");
+}
+
+.Terrible{
+    background-image: url("./images/Terrible.png");
+}
+
